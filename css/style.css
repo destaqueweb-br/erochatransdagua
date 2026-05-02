@@ -126,6 +126,8 @@ ul {
 .btn-block {
     display: flex;
     width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .btn-primary {
@@ -442,8 +444,8 @@ header.scrolled .header-logo {
 
 .experience-badge {
     position: absolute;
-    bottom: -20px;
-    right: -20px;
+    bottom: 20px;
+    right: 20px;
     background-color: var(--primary-color);
     color: var(--white);
     width: 140px;
@@ -455,7 +457,7 @@ header.scrolled .header-logo {
     justify-content: center;
     box-shadow: var(--shadow-lg);
     border: 8px solid var(--bg-light);
-    transform: translate(-30px, -30px);
+    z-index: 10;
 }
 
 .experience-badge .number {
@@ -696,8 +698,8 @@ header.scrolled .logo-text {
 @media (max-width: 992px) {
     .hero h1 { font-size: 2.75rem; }
     .quality-grid, .contact-grid { grid-template-columns: 1fr; }
-    .experience-badge { right: 20px; transform: translate(0, 50%); bottom: 0; }
-    .quality-image { margin-bottom: 4rem; }
+    .experience-badge { right: 10px; bottom: 10px; transform: scale(0.8); transform-origin: bottom right; }
+    .quality-image { margin-bottom: 2rem; }
 }
 
 @media (max-width: 768px) {
